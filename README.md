@@ -1,4 +1,4 @@
-# C-with-SFML-course
+# Cplusplus-with-SFML-course
 This is a course to get acquainted with C++, SFML and how to use both to put together a working program with a window and other multimedia capabilities.
 It is recommended to have some programming knowledge prior to the course, but everything necessary will be explained during the course.
 
@@ -8,14 +8,14 @@ An overview of the course and its subjects are given, required software for diff
 #2 Hello program
 An introduction how a C++ program is structured and how to compile and build it.
 
-#3 Parameter types and constants
+#3 Input, output and strings
+Input, output and what strings are explained.
+
+#4 Parameter types and constants
 Parameter types and constants and their usage are explained.
 
-#4 Operating on parameters
+#5 Operating on parameters
 A look on what you can do to those defenseless parameters.
-
-#5 Input, output and strings
-Input, output and what strings are explained.
 
 #6 Control the flow
 Using if(/else) statements, for loops, while loops, etc. to control what your program does.
