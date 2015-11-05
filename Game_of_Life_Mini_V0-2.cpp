@@ -194,15 +194,15 @@ void next_generation(const std::vector< std::vector< int > > & current_grid, std
 	// const int next_y_size = next_grid.size();
 	
 	assert(current_y_size > 0);
-	assert(next_y_size > 0);
-	assert(current_y_size == next_y_size);
+	// assert(next_y_size > 0);
+	// assert(current_y_size == next_y_size);
 	
 	const int current_x_size = current_grid[0].size();
 	// const int next_x_size = next_grid[0].size();
 	
 	assert(current_x_size > 0);
-	assert(next_x_size > 0);
-	assert(current_x_size == next_x_size);
+	// assert(next_x_size > 0);
+	// assert(current_x_size == next_x_size);
 	
 	
 	for (int x_pos = 0; x_pos < current_x_size; ++x_pos)
@@ -266,13 +266,13 @@ int main()
 	const std::string gol_name = "Game of Life Mini V0.2";
 	
 	
-	const int delaz = 100;
+	const int delaz = 50;
 	
 	assert(delaz > 0);
 	
 	const std::chrono::milliseconds delay(delaz);
 	
-	const int x_size = 80, y_size = 80;
+	const int x_size = 100, y_size = 100;
 	
 	const bool term = false, sfml = true;
 	
@@ -281,9 +281,7 @@ int main()
 	
 	assert(y_size > 2);
 	assert(y_size <= 100);
-	
-	assert(generation_loop > 0);
-	
+			
 	const int dot_size = 8;
 	
 	const int window_x = x_size*dot_size, window_y = y_size*dot_size;
@@ -332,6 +330,8 @@ int main()
 	while (window.isOpen())
 	{
 		
+		sf::Event event;
+		
 		if (sfml)
 		{
 			
@@ -362,6 +362,20 @@ int main()
 					
 			return 1;
 					
+		}
+		
+		while (window.pollEvent(event))
+		{
+			
+			if (event.type == sf::Event::Closed)
+            {
+				
+				window.close();
+				
+				return 2;
+				
+			}
+		
 		}
 		
 	}
