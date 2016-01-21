@@ -1,0 +1,79 @@
+[Intro]
+
+Char en string zijn variablen waar tekstkarakters in kunnen.
+In een char kan precies een tekstkarakter, terwijl in een string meerdere tekstkarakters achter elkaar in kunnen.
+
+Een char kun je op velerlei manieren hanteren en veranderen, maar 1 char is en blijft 1 char en wordt niet 2 of meer chars zonder dat je die in een zogenaamde container als een array, vector of string.
+
+Strings zijn de beste container voor een rij van tekstkarakters achter elkaar en maken simpele hantering en verandering ervan mogelijk.
+
+Chars roep je aan en initialiseer je zo: char karakter{'b'};
+Waarbij 'b' een weergave van het tekstkarakter b is.
+Voor de rest kun je met chars op een vergelijkbare manier werken als met ints, flouts, doubles, bools, enz.
+
+Strings roep je aan en initialiseer je zo: std::string streng {"Welkom bij de Dojo!"};
+Waarbij "Welkom bij de Dojo!" een weergave voor de string Welkom bij de Dojo! is.
+Strings moet je anders behandelen dan chars, omdat strings slimme containers zijn met een rij van tekstkarakters erin.
+std:: zet je direct voor string omdat strings oorspronkelijk niet in C++ vorkwamen en in een zogenaamde standard library onderdeel van C++ gemaakt werden, een proces wat nu nog steeds voor nieuwe onderdelen doorgaat.
+
+[Programma]
+
+Hier is een voorbeeldprogramma om je inzicht in chars en strings te verhelderen en in praktijk te brengen:
+
+///////////////////////////////////////////
+
+ #include <iostream>
+ #include <fstream>
+ #include <string>
+ 
+ int main()
+ {
+	 
+	 const char karak{'a'};	 
+	 const char ter{'e'};	 
+	 const char karakter{karak + ter};	 
+	 
+	 const std::string str{"Dit is"};	 
+	 const std::string eng{"een zin."};	 
+	 const std::string streng{str + eng};
+	 
+	 std::cout << karak << " + " << ter << " = " << karakter << '\n';
+	 std::cout << str << " + " << eng << " = " << streng << "\n";
+	 
+	 const std::string uitvoer_naam{"uitvoer_bestand.txt"};
+	 
+	 std::ofstream mijn_bestand;
+	 mijn_bestand.open(uitvoer_naam);
+	 mijn_bestand << streng << '\n';
+	 mijn_bestand.close();
+	 
+	 
+	 return 0;
+	 
+ }
+
+///////////////////////////////////////////
+
+[Vragen]
+
+Als je dingen veranderd, sla je bestand op en bouw het bestand.
+
+1. Wat gebeurt er?
+
+2. Wat is het verschil tussen wat er met de chars gebeurt en wat er met de strings gebeurt?
+
+3. Als je de twee eerste chars veranderd, kun je dan wel een herkenbaar teken in de derde char krijgen?
+
+4. Kun je de zin in de derde string fiksen?
+
+5. Wat doet cout?
+
+6. Dupliceer de tweede cout regel en haal '\n' en alle "\n" weg. Wat gebeurt er en waarvor dient \n?
+
+7. Haal de duplicate cout regel weer weg en doe '\n' terug in beide overgebeleven cout regels.
+Wat voor variabele is \n?
+
+8. Heb je al in het door het programa geproduceerde tekstbestand gekeken?
+Wat vind je daar en hoe doet het programma dat?
+
+9. Kun je een andere zin in het tekstbestand laten schrijven en hoe doe je dat zonder de strings te veranderen?
