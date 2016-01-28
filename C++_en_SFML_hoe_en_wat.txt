@@ -1,0 +1,16 @@
+Welkom bij de cursus C++ en SFML programmeren.
+
+Kort gezegd leer je hier de noodzakelijke dingen om in C++ te kunnen programeren en SFML te gebruiken om multimedia te gebruiken voor spelen en andere programas die dat benodigen.
+
+De bedoeling is dat leerlingen leren om de simpele en gevorderde principes achter C++ en SFML te begrijpen, toe te passen en na het hele lesprograma zelfstandig verder aan de slag te kunnen gaan.
+
+In de eerste weken zal er basiskennis over C++ en het programmeren erin worden opgedaan terwijl SFML mede gebruikt wordt om bepaalde principes te demonstreren.
+
+Daarna verschuift de aandacht meer naar SFML om de verschillende multimediaonderdelen onder de knie te krijgen.
+
+Uiteindelijk zijn de laatste paar weken gereserveerd om zelf een project/spel in elkaar te zetten en tijdens de laatste laatste lesdag te demonstreren.
+Dat is dus een prima gelegenheid voor leerlingen om hun kennis en kunde aan zichzelf, de medeleerlingen en familie, vrienden en kennissen te laten zien.
+
+De nadruk ligt sterk op individuële begeleiding i.v.m. niveauverschillen, maar er wordt ook deels klassikaal lesgegeven om essentiële gevorderde principes over te kunnen brengen.
+Desondanks is er wel minimumeis wat programmeerervaring betreft, het is niet de bedoeling dat een leerling geen/onvoldoende kennis van parameters, logica, en andere basiskennis van programeren heeft en dus elke les veel individuële begeleiding nodig heeft.
+In zulk een geval kan een leerling beter de cursus Processing doorlopen en op die manier veel meer over programmeren leren en er plezier in hebben ook echt wat te kunnen programmeren.

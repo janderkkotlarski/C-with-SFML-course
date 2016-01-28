@@ -1,0 +1,148 @@
+If-statements
+
+Wat is een if-statement?
+
+Kortgezegd zijn het functies die een sectie code uit kan voeren of niet, waarbij dat afhangt of de expressie in de haakjes waar is of niet.
+
+//////////////////////////////////////////////
+
+if (expressie)
+{
+
+    code
+
+}
+
+//////////////////////////////////////////////
+
+Als expressie waar is, dan wordt code uitgevoerd, als expressie onwaar is, wordt code niet uitgevoerd.
+
+Typ en bouw de onderstaande code:
+
+//////////////////////////////////////////////
+
+#include <iostream>
+
+int main()
+{
+
+    const int getal_1{14};
+
+    const int getal_2{15};
+
+    if (getal_1 == getal_2)
+    {
+
+        std::cout << "Ze zijn gelijk.\n";
+
+    }
+
+    return 0;
+
+}
+
+//////////////////////////////////////////////
+
+Wanneer krijg je uitvoer?
+Kun je de code zo veranderen dat je passende uitvoer krijgt als getal_1 en getal_2 ongelijk aan elkaar zijn?
+En wat als getal_1 kleiner dan getal_2 is?
+
+
+Je kunt een if-statement ook dingen laten doen als er niet aan de expressie voldaan wordt.
+Dan wordt het een if-else-statement.
+
+//////////////////////////////////////////////
+
+if (expressie)
+{
+
+    code
+
+}
+else
+{
+
+    kode
+
+}
+
+//////////////////////////////////////////////
+
+Typ en bouw de onderstaande code:
+
+//////////////////////////////////////////////
+
+#include <iostream>
+
+int main()
+{
+
+    const int getal_1{14};
+
+    const int getal_2{15};
+
+    if (getal_1 == getal_2)
+    {
+
+        std::cout << "Ze zijn gelijk.\n";
+
+    }
+
+    return 0;
+
+}
+
+//////////////////////////////////////////////
+
+Kun je de code zo veranderen dat je ook een passende uitvoer krijgt als de getallen verschillend zijn?
+
+Nog een vorm van het if-statement is het if-else-if-statement, waarbij als er niet aan de eerste epxressie voldaan wordt, er pas iets gedaan wordt als er aan de tweede expressie wat gedaan wordt.
+
+//////////////////////////////////////////////
+
+if (expressie)
+{
+
+    code
+
+}
+else if (ekspressie)
+{
+
+    kode
+
+}
+
+//////////////////////////////////////////////
+
+Typ en bouw de onderstaande code:
+
+//////////////////////////////////////////////
+
+#include <iostream>
+
+int main()
+{
+
+    const int getal_1{18};
+
+    const int getal_2{15};
+
+    if (getal_1 < getal_2)
+    {
+
+        std::cout << "Getal 1 is kleiner dan getal 2.\n";
+
+    }
+
+    return 0;
+
+}
+
+//////////////////////////////////////////////
+
+Kun je het voor elkaar krijgen om passende uitvoer te krijgen als getal_1 wel groter is dan getal_2 middels een if-else-if-statement?
+Hoe zou je nog een derde passende uitvoer erbij maken voor als beide getallen gelijk zijn?
+
+Zoals je ziet kun je middels if-statements en het toevoegen van else en else if veel schakelen.
+Er zijn nog meer schakelfuncties, maar die zijn voor later.
